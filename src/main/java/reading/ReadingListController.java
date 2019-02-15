@@ -1,6 +1,7 @@
 package reading;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +15,10 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/")
+@ConfigurationProperties(prefix="amazon")
 public class ReadingListController {
+
+    private String associateId;
 
     private ReadingListRepository readingListRepository;
 
@@ -22,6 +26,11 @@ public class ReadingListController {
     public ReadingListController(ReadingListRepository readingListRepository){
         this.readingListRepository = readingListRepository;
     }
+
+    public void setAssociateId(String associateId) {
+        this.associateId = associateId;
+    }
+
 
     @RequestMapping(value="/{reader}", method = RequestMethod.GET)
     public String readerBooks(
@@ -31,6 +40,9 @@ public class ReadingListController {
         List<Book> readingList = readingListRepository.findByReader(reader);
         if(readingList != null){
             model.addAttribute("books",readingList);
+            model.addAttribute("reader", reader);
+            model.addAttribute("amazonID", associateId);
+
         }
         return "readingList";
     }
