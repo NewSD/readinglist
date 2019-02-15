@@ -1,17 +1,17 @@
-[2019-02-15 12:53:59.124] - 6008 信息 [main] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
-[2019-02-15 12:53:59.129] - 6008 信息 [main] --- org.apache.catalina.core.StandardEngine: Starting Servlet Engine: Apache Tomcat/8.5.31
-[2019-02-15 12:53:59.306] - 6008 信息 [localhost-startStop-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring embedded WebApplicationContext
-[2019-02-15 12:54:00.153] - 6008 严重 [main] --- org.apache.tomcat.jdbc.pool.ConnectionPool: Unable to create initial connections of pool.
+[2019-02-15 12:52:51.750] - 20304 信息 [main] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
+[2019-02-15 12:52:51.754] - 20304 信息 [main] --- org.apache.catalina.core.StandardEngine: Starting Servlet Engine: Apache Tomcat/8.5.31
+[2019-02-15 12:52:51.903] - 20304 信息 [localhost-startStop-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring embedded WebApplicationContext
+[2019-02-15 12:52:52.623] - 20304 严重 [main] --- org.apache.tomcat.jdbc.pool.ConnectionPool: Unable to create initial connections of pool.
 java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
-	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
-	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
-	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
-	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
-	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
 	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
 	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -37,11 +37,11 @@ java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using pass
 	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$58cda190.CGLIB$jpaVendorAdapter$10(<generated>)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$58cda190$$FastClassBySpringCGLIB$$c537fa89.invoke(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$953fb3b5.CGLIB$jpaVendorAdapter$5(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$953fb3b5$$FastClassBySpringCGLIB$$743e0e51.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$58cda190.jpaVendorAdapter(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$953fb3b5.jpaVendorAdapter(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,17 +95,17 @@ java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using pass
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
 	at reading.ReadingApplication.main(ReadingApplication.java:14)
 
-[2019-02-15 12:54:00.178] - 6008 严重 [main] --- org.apache.tomcat.jdbc.pool.ConnectionPool: Unable to create initial connections of pool.
+[2019-02-15 12:52:52.643] - 20304 严重 [main] --- org.apache.tomcat.jdbc.pool.ConnectionPool: Unable to create initial connections of pool.
 java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
-	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
-	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
-	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
-	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
-	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
 	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
 	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -135,11 +135,11 @@ java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using pass
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.getHibernateProperties(JpaProperties.java:126)
 	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration.getVendorProperties(HibernateJpaAutoConfiguration.java:104)
 	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:129)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$58cda190.CGLIB$entityManagerFactory$3(<generated>)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$58cda190$$FastClassBySpringCGLIB$$c537fa89.invoke(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$953fb3b5.CGLIB$entityManagerFactory$6(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$953fb3b5$$FastClassBySpringCGLIB$$743e0e51.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$58cda190.entityManagerFactory(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$953fb3b5.entityManagerFactory(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,24 +165,24 @@ java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using pass
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
 	at reading.ReadingApplication.main(ReadingApplication.java:14)
 
-[2019-02-15 12:54:00.256] - 6008 INFO [main] --- org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+[2019-02-15 12:52:52.686] - 20304 INFO [main] --- org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-[2019-02-15 12:54:00.452] - 6008 INFO [main] --- org.hibernate.Version: HHH000412: Hibernate Core {5.0.12.Final}
-[2019-02-15 12:54:00.459] - 6008 INFO [main] --- org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
-[2019-02-15 12:54:00.464] - 6008 INFO [main] --- org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
-[2019-02-15 12:54:00.553] - 6008 INFO [main] --- org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-[2019-02-15 12:54:00.782] - 6008 严重 [main] --- org.apache.tomcat.jdbc.pool.ConnectionPool: Unable to create initial connections of pool.
+[2019-02-15 12:52:52.761] - 20304 INFO [main] --- org.hibernate.Version: HHH000412: Hibernate Core {5.0.12.Final}
+[2019-02-15 12:52:52.763] - 20304 INFO [main] --- org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+[2019-02-15 12:52:52.765] - 20304 INFO [main] --- org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+[2019-02-15 12:52:52.811] - 20304 INFO [main] --- org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[2019-02-15 12:52:52.973] - 20304 严重 [main] --- org.apache.tomcat.jdbc.pool.ConnectionPool: Unable to create initial connections of pool.
 java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
-	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
-	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
-	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
-	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2219)
-	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2014)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2190)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
 	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
 	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -241,5 +241,5 @@ java.sql.SQLException: Access denied for user 'niuhd123'@'localhost' (using pass
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
 	at reading.ReadingApplication.main(ReadingApplication.java:14)
 
-[2019-02-15 12:54:00.786] - 6008 WARN [main] --- org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: HHH000342: Could not obtain connection to query metadata : Access denied for user 'niuhd123'@'localhost' (using password: YES)
-[2019-02-15 12:54:00.796] - 6008 信息 [main] --- org.apache.catalina.core.StandardService: Stopping service [Tomcat]
+[2019-02-15 12:52:52.976] - 20304 WARN [main] --- org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: HHH000342: Could not obtain connection to query metadata : Access denied for user 'niuhd123'@'localhost' (using password: YES)
+[2019-02-15 12:52:52.982] - 20304 信息 [main] --- org.apache.catalina.core.StandardService: Stopping service [Tomcat]
